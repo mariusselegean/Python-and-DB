@@ -1,0 +1,7 @@
+select_misc_query = "SELECT col1, col2 FROM misc"
+with connection.cursor() as cursor:
+     cursor.execute(select_misc_query)
+     for row in cursor.fetchall():
+         print(row)
+
+
