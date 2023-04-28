@@ -1,0 +1,12 @@
+create_table_example = """
+CREATE TABLE misc(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    column1 VARCHAR(100),
+    column2 YEAR(4),
+    column3 VARCHAR(100),
+    column4 INT
+)
+"""
+with connection.cursor() as cursor:
+    cursor.execute(create_table_example)
+    connection.commit()
