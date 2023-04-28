@@ -1,0 +1,15 @@
+insert_misc_query = """
+INSERT INTO movies (col1, col2, col3)
+VALUES
+  ("Value1", "Value2", "Value3"),
+  ("Value1", "Value2", "Value3"),
+  ("Value1", "Value2", "Value3"),
+  ("Value1", "Value2", "Value3"),
+  ("Value1", "Value2", "Value3"),
+  ("Value1", "Value2", "Value3")
+  """
+
+with connection.cursor() as cursor:
+    cursor.execute(insert_misc_query)
+    connection.commit()
+  
